@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沁园春·雪 - 毛泽东</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SimSun', 'STKaiti', 'KaiTi', serif;
+            background-color: #f8f3e6;
+            color: #5c3d1e;
+            line-height: 1.6;
+            padding: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.1"><rect fill="none" stroke="%235c3d1e" stroke-width="2" x="10" y="10" width="80" height="80" rx="10" ry="10"/></svg>');
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fffaf0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 1px solid #e8d9c5;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e8d9c5;
+            position: relative;
+        }
+        
+        .header:after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 25%;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #8b4513, transparent);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #8b4513;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .author {
+            font-size: 1.2rem;
+            color: #a0522d;
+            font-style: italic;
+        }
+        
+        .poem-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        .poem {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-size: 1.4rem;
+            line-height: 2.2;
+            padding: 20px;
+            border: 1px solid #d2b48c;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+            max-height: 70vh;
+            overflow-y: auto;
+            margin: 0 auto;
+        }
+        
+        .poem p {
+            margin: 0;
+            text-indent: 0;
+        }
+        
+        .annotation {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f5f0e6;
+            border-radius: 5px;
+            border-left: 4px solid #8b4513;
+        }
+        
+        .annotation h3 {
+            color: #8b4513;
+            margin-bottom: 10px;
+        }
+        
+        .annotation p {
+            line-height: 1.8;
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            opacity: 0.2;
+        }
+        
+        .decoration-tl {
+            top: 10px;
+            left: 10px;
+            border-top: 2px solid #8b4513;
+            border-left: 2px solid #8b4513;
+        }
+        
+        .decoration-tr {
+            top: 10px;
+            right: 10px;
+            border-top: 2px solid #8b4513;
+            border-right: 2px solid #8b4513;
+        }
+        
+        .decoration-bl {
+            bottom: 10px;
+            left: 10px;
+            border-bottom: 2px solid #8b4513;
+            border-left: 2px solid #8b4513;
+        }
+        
+        .decoration-br {
+            bottom: 10px;
+            right: 10px;
+            border-bottom: 2px solid #8b4513;
+            border-right: 2px solid #8b4513;
+        }
+        
+        @media (max-width: 768px) {
+            .poem {
+                writing-mode: horizontal-tb;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                max-height: none;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e8d9c5;
+            color: #a0522d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decoration decoration-tl"></div>
+        <div class="decoration decoration-tr"></div>
+        <div class="decoration decoration-bl"></div>
+        <div class="decoration decoration-br"></div>
+        
+        <div class="header">
+            <h1>沁园春·雪</h1>
+            <div class="author">毛泽东</div>
+        </div>
+        
+        <div class="poem-container">
+            <div class="poem">
+                <p>北国风光，千里冰封，万里雪飘。</p>
+                <p>望长城内外，惟余莽莽；</p>
+                <p>大河上下，顿失滔滔。</p>
+                <p>山舞银蛇，原驰蜡象，欲与天公试比高。</p>
+                <p>须晴日，看红装素裹，分外妖娆。</p>
+                <br>
+                <p>江山如此多娇，引无数英雄竞折腰。</p>
+                <p>惜秦皇汉武，略输文采；</p>
+                <p>唐宗宋祖，稍逊风骚。</p>
+                <p>一代天骄，成吉思汗，只识弯弓射大雕。</p>
+                <p>俱往矣，数风流人物，还看今朝。</p>
+            </div>
+        </div>
+        
+        <div class="annotation">
+            <h3>作品简介</h3>
+            <p>《沁园春·雪》是毛泽东于1936年创作的一首词。该词上片描写北国壮丽的雪景，纵横千万里，展示了大气磅礴、旷达豪迈的意境；下片议论抒情，重点评论历史人物，歌颂当代英雄，抒发无产阶级要做世界的真正主人的豪情壮志。全词熔写景、议论和抒情于一炉，意境壮美，气势恢宏，感情奔放，胸襟豪迈。</p>
+        </div>
+        
+        <div class="footer">
+            <p>中华经典诗词鉴赏 | 传统与现代的完美融合</p>
+        </div>
+    </div>
+</body>
+</html>
